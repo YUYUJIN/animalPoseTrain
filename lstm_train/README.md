@@ -15,7 +15,7 @@
 최종적으로 5의 시퀀스를 입력을 받고, 각각의 시퀀스는 30차원으로 이루어진 깊이가 3차원인 모델을 구성하였다. 깊이의 경우에는 차원을 높여도 성능이 좋아지지 않아 경험적 테스트 상 최적의 값이 3을 기준으로 설정하였다. 추가로 최종 레이어의 입력 차원을 확대하여모든 시퀀스에 대한 h 값을 입력 값으로 사용하여 모델을 구성하였다.
 
 ## Train
-학습 코드를 작성 시에는 아래 참고 자료를 활용하였다.
+학습 코드를 작성 시에는 아래 참고 자료를 활용하였다.  
 blog: https://eunhye-zz.tistory.com/entry/Pytorch%EB%A5%BC-%ED%99%9C%EC%9A%A9%ED%95%9C-Timeseries-%EC%98%88%EC%B8%A1-%EB%AA%A8%EB%8D%B81-LSTM  
 link: https://www.deeplearningwizard.com/deep_learning/practical_pytorch/pytorch_lstm_neuralnetwork/  
 

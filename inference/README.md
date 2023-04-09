@@ -15,5 +15,5 @@
 <summary>동영상 적용</summary>
 
 기존의 학습 데이터는 프레임 당 데이터여서 묶어서 처리하면 최종 데이터를 구성할 수 있었다. 하지만 실제 데이터는 프레임 당 계속해서 발생하므로 이를 평균내어 동작 저장하고 Queue 구조를 이용하여 새로운 데이터가 들어오면 기존의 데이터를 밀어내고 Queue 내의 데이터 전체가 모델의 입력으로 사용되는 방식으로 구성하여 해결하였다.
-<(lstm_queue)이미지>
+<img src=https://github.com/YUYUJIN/animalPoseTrain/blob/main/images/dataqueue.png></img>
 </details>
