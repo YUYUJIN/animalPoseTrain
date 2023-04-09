@@ -25,3 +25,7 @@ Animal-Keypoint-Estimation: https://github.com/thomasreynolds4881/Animal-Keypoin
 Pytorch를 활용한 Timeseries 예측모델(1) - LSTM: https://eunhye-zz.tistory.com/entry/Pytorch%EB%A5%BC-%ED%99%9C%EC%9A%A9%ED%95%9C-Timeseries-%EC%98%88%EC%B8%A1-%EB%AA%A8%EB%8D%B81-LSTM  
 Long Short-Term Memory (LSTM) network with PyTorch: https://www.deeplearningwizard.com/deep_learning/practical_pytorch/pytorch_lstm_neuralnetwork/  
 Pytorch Learning Rate Scheduler (러닝 레이트 스케쥴러) 정리: https://gaussian37.github.io/dl-pytorch-lr_scheduler/  
+
+## Produced by 푸루주투
+<img src=https://github.com/YUYUJIN/animalPoseTrain/blob/main/images/logo.png style="width:100px; height:100px;"></img>  
+team. 푸루주투
