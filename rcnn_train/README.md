@@ -13,7 +13,7 @@ github: https://github.com/alexppppp/keypoint_rcnn_training_pytorch
 단일 라벨인 것을 다중 라벨로 바꾸어 구성하여 사용하였다. 나머지는 전처리 완료한 데이터를 사용할 수 있도록 구성과 코드만 수정하여 사용하였다.  
 
 ## Trouble Shooting
-<(keypoint_train)이미지>  
+<img src=https://github.com/YUYUJIN/animalPoseTrain/blob/main/images/keypoint_train.png></img>  
 <details>
 <summary>학습 시간 소요</summary>
 

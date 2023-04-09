@@ -3,13 +3,13 @@
 
 ## Why LSTM
 행동을 분류하기 위해서는 영상의 단편적인 정보만으로는 판단이 불가능하다.  
-<(wlstm1)이미지>  
+<img src=https://github.com/YUYUJIN/animalPoseTrain/blob/main/images/wlstm1.png></img>  
 위와 같이 하나의 프레임으로는 판단이 불가하므로 연속된 프레임을 모두 확인하여야한다.  
-<(wlstm2)이미지>  
+<img src=https://github.com/YUYUJIN/animalPoseTrain/blob/main/images/wlstm2.png></img>  
 이를 구현하기 위해서 keypoint를 입력으로 사용하는 rnn 구조를 고려하였고, 그 중에서 여러 시퀀스에 입력이 있을 때 이전 값의 전파가 기억되어 좋은 성능을 보여주는 LSTM 모델을 사용하기로 하였다. 앞 부분에 나온 시퀀스가 해당 행동의 큰 특징이 될 수도 있기에 이전 시퀀스를 잘 반영할 수 있는 LSTM이 최적이라 판단하였다.
 
 ## Structure
-<(lstm_s)이미지>  
+<img src=https://github.com/YUYUJIN/animalPoseTrain/blob/main/images/lstm_s.PNG></img>  
 최종적으로 위와 같은 구조를 가지는 모델을 설계하였다.
 각 셀에 입력되는 데이터는 x,y 좌표를 가지는 15개의 keypoint이므로 30차원의 데이터를 사용하였다. 데이터가 각각 5-6 프레임마다의 keypoint이고, 구동 환경에서 초당 30프레임의 데이터를 사용하기로 하였으므로 1초마다 행동을 판별하기 위해서는 5개의 keypoint 데이터를 입력으로 사용한다.  
 최종적으로 5의 시퀀스를 입력을 받고, 각각의 시퀀스는 30차원으로 이루어진 깊이가 3차원인 모델을 구성하였다. 깊이의 경우에는 차원을 높여도 성능이 좋아지지 않아 경험적 테스트 상 최적의 값이 3을 기준으로 설정하였다. 추가로 최종 레이어의 입력 차원을 확대하여모든 시퀀스에 대한 h 값을 입력 값으로 사용하여 모델을 구성하였다.
@@ -30,7 +30,7 @@ link: https://www.deeplearningwizard.com/deep_learning/practical_pytorch/pytorch
 
 최적의 학습률을 찾을 수가 없었다. 따라서 학습률를 학습 진행 시에 변화하도록하는 learning scheduler를 사용하기로 하였다.  
 gitblog: https://gaussian37.github.io/dl-pytorch-lr_scheduler/  
-<(lstm_t)이미지>  
+<img src=https://github.com/YUYUJIN/animalPoseTrain/blob/main/images/lstm_t.png></img>  
 최종적으로 step 함수를 이용하여 높은 학습률부터 시작하여 특정 구간마다 학습률을 떨어뜨리는 방식으로 학습을 진행하였고, 정확도를 향상할 수 있었다.
 </details>
 <details>

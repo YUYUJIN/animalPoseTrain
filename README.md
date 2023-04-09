@@ -4,7 +4,7 @@
 > 검출된 정보를 바탕으로 반려동물의 행동을 분류하는 모델 학습  
 
 ## Train Data
-<(aihub)이미지>  
+<img src=https://github.com/YUYUJIN/animalPoseTrain/blob/main/images/aihub.jpg></img>  
 link: https://aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=realm&dataSetSn=59  
 데이터로는 AIHub의 반려동물 구분을 위한 동물 영상 데이터를 사용하였다.  
 
@@ -15,4 +15,10 @@ Fast-RCNN 모델과 LSTM 모델을 사용하기 위해 pytorch를 설치한다.
 pip install torch==1.11.0+cu113 torchvision==0.12.0+cu113 torchaudio==0.11.0 --extra-index-url https://download.pytorch.org/whl/cu113
 ```  
 
+## Inforamtion
+자세한 내용은 각 프로세스별 폴더 참조.  
+
 ## Reference
+반려동물 구분을 위한 동물 영상: https://aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=realm&dataSetSn=59  
+keypoint_rcnn_training_pytorch: https://github.com/alexppppp/keypoint_rcnn_training_pytorch  
+Animal-Keypoint-Estimation: https://github.com/thomasreynolds4881/Animal-Keypoint-Estimation  

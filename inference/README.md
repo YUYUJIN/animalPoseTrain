@@ -3,11 +3,11 @@
 > 실행코드는 각각의 train 코드에서 모델을 사용하는 부분만을 분리하여 동영상 입력에 대해 작동하도록 수정하였다.
 
 ## Fast-RCNN Keypoint Model
-<(fast_rcnn_result)이미지>  
+<img src=https://github.com/YUYUJIN/animalPoseTrain/blob/main/images/fast_rcnn_result.png></img>  
 학습된 Fast-RCNN 모델의 결과이다.
 
 ## LSTM Action Classify Model
-<(lstm_result)이미지>  
+<img src=https://github.com/YUYUJIN/animalPoseTrain/blob/main/images/lstm_result.png></img>  
 학습된 LSTM 모델의 결과이다.
 
 ## Trouble Shooting
